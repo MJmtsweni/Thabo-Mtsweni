@@ -233,7 +233,7 @@ section {
     display: block;
     width: 47%;
     height: 80%;
-    background-image: url("/media/branding/hero-background.png");
+    background-image: url("../media/branding/hero-background.png");
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
