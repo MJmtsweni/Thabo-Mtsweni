@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!--Main CSS Stylesheet-->
     <link rel="stylesheet" href="./css/style.css">
+    <!--Responsiveness Stylesheet-->
+    <link rel="stylesheet" href="./css/responsiveness.css">
     <!--Bootstrap CSS
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 -->
@@ -19,16 +21,38 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">
+            <a class="logo" href="./index.html">
                 <span class="first-name">Thabo</span> 
                 <span class="last-name">Mtsweni</span>
-            </div>
+            </a>
             <ul class="nav-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html"><span class="current">Home</span></a></li>
+                <li><a href="about.html">About</a></li>               
                 <li><a href="work.html">My Work</a></li>
                 <li><a href="contact.html">Reach Me</a></li>
             </ul>
+        </ul>
+        <!--Mobile menu button-->
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <!--Mobile navigation-->
+        <ul class="menu-mobile">
+            <li>
+                <a href="./index.html" class="nav-link"><span class="current">Home</span></a>
+            </li>
+            <li>
+                <a href="./about.html" class="nav-link">About</a>
+            </li>
+            <li>
+                <a href="./work.html" class="nav-link">My Work</a>
+            </li>
+            <li>
+                <a href="./contact.html" class="nav-link">Reach Me</a>
+            </li>
+        </ul>
         </nav>
     </header>
 
@@ -198,7 +222,7 @@
         <section class="contact area">
             <span class="section-guide"></span>
             <h2 class="space-top">Get In Touch</h2>
-            <h3>Explore a Section of Projects</h3>
+            <h3>Let's collaborate</h3>
             <p class="intro-para">
                 I'm always interested in connecting with other developers and exploring new opportunities. 
                 Feel free to reach out using the information below.
@@ -287,7 +311,11 @@
             <a href="./media/downloads/Presently Website Disclaimer.pdf" download="Presently Website Disclaimer.pdf" target="_blank">Disclaimer</a>
         </div>
     </footer>
+    <!--Toggle Menu Script-->
+    <script src="./js/toggle-menu.js"></script>
+    <!--Verticle Slider Script-->
     <script src="./js/vertical-slider.js"></script>
+    <!--Carousel Script-->
     <script src="./js/carousel.js"></script>
     <!--Bootstrap Script
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

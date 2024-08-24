@@ -14,20 +14,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--Main CSS Stylesheet-->
     <link rel="stylesheet" href="./css/style.css">
-    
+    <!--Responsiveness Stylesheet-->
+    <link rel="stylesheet" href="./css/responsiveness.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">
+            <a class="logo" href="./index.html">
                 <span class="first-name">Thabo</span> 
                 <span class="last-name">Mtsweni</span>
-            </div>
+            </a>
             <ul class="nav-items">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html"><span class="current">About</span></a></li>
                 <li><a href="work.html">My Work</a></li>
                 <li><a href="contact.html">Reach Me</a></li>
+            </ul>
+            <!--Mobile menu button-->
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+            <!--Mobile navigation-->
+            <ul class="menu-mobile">
+                <li>
+                    <a href="./index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html" class="nav-link"><span class="current">About</span></a>
+                </li>
+                <li>
+                    <a href="./work.html" class="nav-link">My Work</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="nav-link">Reach Me</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -68,23 +90,6 @@
                     </p>
                 </div>
                 <img src="./media/branding/me-about.png" alt="A picture of Thabo Mtsweni about to jog.">
-            </div>
-            <div class="hero-nav-items">
-                <a href="">
-                    <i class="fa-solid fa-user">
-                        <span class="icon-label">About</span>
-                    </i>
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-briefcase">
-                        <span class="icon-label">Work</span>
-                    </i>
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-address-book">
-                        <span class="icon-label">Reach Me</span>
-                    </i>
-                </a>
             </div>
         </Section>
         <section class="journey area">
@@ -231,7 +236,7 @@
                             <div class="hardskill-item">
                                 <h5>Frameworks and Libraries</h5>
                                 <div class="icons">
-                                    <i class="fa-solid fa-scroll"></i>
+                                    <img src="./media/icons/jquery.svg" alt="" class="svg-icon">
                                     <i class="fa-brands fa-react"></i>
                                     <i class="fa-brands fa-bootstrap"></i>
                                 </div>
@@ -264,8 +269,8 @@
                             <div class="hardskill-item">
                                 <h5>Design Tools</h5>
                                 <div class="icons">
-                                    <i class="fa-brands fa-html5"></i>
-                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <img src="./media/icons/xd.svg" alt="" class="svg-icon">
+                                    <img src="./media/icons/canva.svg" alt="" class="svg-icon">
                                 </div>
                                 <p>
                                     To create exceptional user experiences, I leverage design tools 
@@ -286,9 +291,11 @@
                                 <div>
                                     <h5>Drive & Initiative</h5>
                                     <p>
-                                        Proactively identifying opportunities and taking action to 
-                                        achieve goals, demonstrating a strong drive to improve 
-                                        and innovate.
+                                        I am constantly seeking out new challenges and opportunities to 
+                                        learn and grow. I am proactive in identifying potential improvements 
+                                        and eager to take ownership of tasks. My enthusiasm for creating 
+                                        exceptional user experiences drives me to explore innovative solutions 
+                                        and deliver outstanding results.
                                     </p>
                                 </div>
                             </div>
@@ -297,9 +304,9 @@
                                 <div>
                                     <h5>Building Rapport</h5>
                                     <p>
-                                        Understanding and sharing the feelings of others, fostering 
-                                        a compassionate and supportive environment for effective 
-                                        collaboration.
+                                        I am eager to understand the needs and perspectives of others. I believe 
+                                        that building strong relationships, based on empathy and open communication, 
+                                        is essential for successful teamwork.
                                     </p>
                                 </div>
                             </div>
@@ -310,9 +317,9 @@
                                 <div>
                                     <h5>Collaborative Spirit</h5>
                                     <p>
-                                        Working collaboratively with others towards a common 
-                                        goal, leveraging diverse skills and perspectives to achieve 
-                                        better outcomes.
+                                        I am excited about the opportunity to collaborate with others and contribute 
+                                        to a shared goal. I believe that diverse perspectives lead to innovative 
+                                        solutions.
                                     </p>
                                 </div>
                             </div>
@@ -321,9 +328,9 @@
                                 <div>
                                     <h5>Continuous Learning</h5>
                                     <p>
-                                        Open to receiving and acting upon feedback to improve skills 
-                                        and performance, demonstrating a commitment to personal 
-                                        and professional growth.
+                                        I am a quick learner with a strong desire to stay up-to-date with the latest 
+                                        front-end technologies and best practices. I am committed to professional 
+                                        growth and eager to take on new challenges.
                                     </p>
                                 </div>
                             </div>
@@ -334,9 +341,9 @@
                                 <div>
                                     <h5>Clear & Compelling Communication</h5>
                                     <p>
-                                        Clearly and effectively conveying ideas and information, 
-                                        ensuring mutual understanding and fostering strong 
-                                        relationships.
+                                        I am a clear and concise communicator who strives to convey information 
+                                        effectively. I believe that open and honest communication is essential for 
+                                        building strong working relationships.
                                     </p>
                                 </div>
                             </div>
@@ -345,9 +352,9 @@
                                 <div>
                                     <h5>Thriving on Change</h5>
                                     <p>
-                                        Adjusting to new challenges and environments with flexibility 
-                                        and resilience, maintaining productivity and positivity in the 
-                                        face of change.
+                                        I am adaptable and flexible, eager to embrace new challenges and opportunities. 
+                                        I believe that a positive attitude and problem-solving skills are essential for 
+                                        success in a fast-paced environment.
                                     </p>
                                 </div>
                             </div>
@@ -359,7 +366,7 @@
         <section class="contact area">
             <span class="section-guide"></span>
             <h2 class="space-top">Get In Touch</h2>
-            <h3>Explore a Section of Projects</h3>
+            <h3>Let's collaborate</h3>
             <p class="intro-para">
                 I'm always interested in connecting with other developers and exploring new opportunities. 
                 Feel free to reach out using the information below.
@@ -449,6 +456,8 @@
             <a href="./media/downloads/Presently Website Disclaimer.pdf" download="Presently Website Disclaimer.pdf" target="_blank">Disclaimer</a>
         </div>
     </footer>
+    <!--Toggle Menu Script-->
+    <script src="./js/toggle-menu.js"></script>
     <!--Verticle Slider Script-->
     <script src="./js/vertical-slider.js"></script>
     <!--Bootstrap Script-->

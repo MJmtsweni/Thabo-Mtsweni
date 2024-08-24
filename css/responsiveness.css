@@ -1,0 +1,895 @@
+/*****Responsiveness Section*****/
+/*****Mobile menu visibility rules*****/
+@media screen and (min-width: 769px) {
+    .menu-btn {
+        visibility: hidden; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        visibility: visible; 
+    }
+      header nav ul {
+        visibility: hidden; 
+    } 
+}
+
+/* Small Phones */
+@media  (max-width: 599px) {
+    .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    
+    section {
+        padding: 18px 10px;
+        height: fit-content;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .hero::before {
+        width: 100%;
+        background-image: url(../media/branding/hero-background-mobile.png);
+        background-position: bottom;
+    }
+
+    .hero-nav-items {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .hero-nav-items a i {
+        font-size: 1.4rem;
+    }
+
+    .hero .container {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 0;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 13px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-left: 12px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-left: 12px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+
+    /* Layout */
+    .row-content {
+        flex-direction: column;
+    }
+
+    .section-guide {
+        width: 20px;
+        height: 21px;
+    }
+
+    .space-top {
+        margin-top: 1rem;
+    }
+
+    .intro-para {
+        margin: 15px auto;
+        width: 95%;
+    }
+
+    /* Components */
+    .primary-button {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin: 10px 0;
+    }
+
+    .nav-dots {
+        top: 60%;
+        right: 4%;
+    }
+
+    .indicator-item {
+        width: 10px;
+        height: 10px;
+
+        &.is-active {
+            width: 10px;
+            height: 10px;
+            border: 1.5px solid white;
+        }
+    }
+
+    /* About-Intro Section */
+    .about-intro .row-content {
+        margin: 6% auto 0;
+        width: 94%;
+    }
+    .about-intro img {
+        width: 95%;
+        height: 215px;
+    }
+
+    .section-text {
+        width: 94%;
+        margin-top: 10px;
+    }
+
+    .section-text p{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    /* work-Intro Section */
+    .carousel-items {
+        height: 100vh;
+    }
+
+    .carousel-arrow {
+        padding: 6px 10px;
+    }
+    
+    .carousel-unit {
+        width: 94%;
+        flex-direction: column;
+    }
+
+    .carousel-unit-image {
+        width: 100%;
+    }
+
+    .carousel-unit-info {
+        width: 100%;
+    }
+
+    .carousel-unit-title {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    /* Contact Section */
+    .contact .row-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    form input, form textarea, form select {
+        font-size: 15px;
+        padding-bottom: 8px;
+    }
+
+    .connect {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* About Page */
+    .home {
+        height: fit-content;
+    }
+    .home .row-content {
+        height: fit-content;
+        width: 90%;
+        margin: 10% auto 0;
+        flex-direction: column-reverse;
+    }
+    
+    .home-text {
+        width: 100%;
+        margin-top: 22px;
+    }
+
+    .home-text p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .home img {
+        width: 100%;
+        content: url("../media/branding/me-about-mobile.png");
+    }
+
+    .container-tab {
+        margin-top: 8%;
+        height: 100%;
+        width: 90%;
+    }
+
+    #myTab.nav {
+        flex-wrap: nowrap;
+    }
+
+    .nav-tabs .nav-link {
+        margin: 0 4px -3px 0;
+        font-size: 14px;
+        width: auto;
+        padding: 5px;
+        line-height: 1.2;
+    }
+
+    #nav-tabContent .container {
+        flex-direction: column;
+    }
+
+    .tab-img {
+        margin: 2% auto;
+        width: 140px;
+    }
+
+    .tab-description {
+        margin-top: 13px;
+        padding: 0px;
+    }
+
+    .tab-description p {
+        text-align: justify;
+    }
+
+    .red-points {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .skillset .row-content {
+        margin-top: 12%;
+    }
+
+    .skillset nav {
+        width: 47%;
+        margin-bottom: 22px;
+    }
+
+    .skillset .nav-tabs .nav-link {
+        width: 50%;
+        font-size: 13px;
+    }
+
+    .soft-skill {
+        bottom: -19px;
+    }
+
+    .hard-skill {
+        top: -17px;
+    }
+
+    #nav-tabContent .row-content {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .hardskill-item {
+        width: 95%;
+        height: fit-content;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .hardskill-item h5 {
+        font-size: 15px;
+    }
+
+    .hardskill-item p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .hardskill-item a {
+        font-size: 13px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+
+    }
+
+    .icons {
+        font-size: 1.5rem;
+        margin: 12px 0;
+    }
+
+    .svg-icon {
+        width: 25px;
+        height: 24px;
+    }
+
+    #soft-tab.tab-pane {
+        width: 90%;
+        margin: 7% auto;
+        padding: 5px;
+    }
+
+    .softskill-item {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 11px;
+    }
+
+    .softskill-item div {
+        margin-top: 13px;
+    }
+
+    .softskill-item h5 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .softskill-item p {
+        font-size: 15px;
+    }
+
+    /* My Work Page */
+    #work .home p {
+        width: 100%;
+        font-size: 18px;
+    }  
+    
+    .projects {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+
+    #work .home .project-img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        max-width: 361px;
+    }
+
+    .project-details h2 {
+        font-size: 16px;
+        margin: 22px 0 0 0;
+        line-height: 1.2;
+    }
+    .project-details h3 {
+        font-size: 20px;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    #work .home .project-details p {
+        font-size: 15px;
+        margin: 6px 0;
+        text-align: justify;
+    }
+
+    .project-details a {
+        font-size: 15px;
+    }
+
+    #work .home .mt-5 {
+        margin-top: 2rem !important;
+    }
+
+    /* Reach Me Page */
+    #contact .home p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #contact .contact {
+        margin-top: 32px;
+    }
+
+    #contact .home .row-content {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    /* Footer Section */
+    footer {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 5%;
+        padding: 20px;
+    }
+
+    footer nav {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 1.2rem;
+        margin: 12px auto 0;
+        text-align: center;
+        order: 4;
+    }
+
+    footer h5 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+  }
+
+/* Phablets */
+@media screen and (min-width: 481px) and (max-width: 767px) and (min-height: 1200px) {
+    .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
+    section {
+        padding: 18px 10px;
+        height: fit-content;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .hero::before {
+        width: 100%;
+        background-image: url(../media/branding/hero-background-mobile.png);
+        background-position: bottom;
+    }
+
+    .hero-nav-items {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15%;
+    }
+
+    .hero-nav-items a i {
+        font-size: 2rem;
+    }
+
+    .socials a i {
+        font-size: 1.39em;
+    }
+
+    .hero .container {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 0;
+        margin-top: 20%;
+    }
+
+    .hero p {
+        font-size: 21px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 3.8rem;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-left: 12px;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin-left: 12px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+
+    /* Layout */
+    .row-content {
+        flex-direction: column;
+    }
+
+    .section-guide {
+        width: 20px;
+        height: 21px;
+    }
+
+    .space-top {
+        margin-top: 1rem;
+    }
+
+    .intro-para {
+        margin: 15px auto;
+        width: 95%;
+    }
+
+    /* Components */
+    .primary-button {
+        font-size: 18px;
+        padding: 6px 12px;
+        margin: 24px 0;
+    }
+
+    .nav-dots {
+        top: 60%;
+        right: 4%;
+    }
+
+    .indicator-item {
+        width: 10px;
+        height: 10px;
+
+        &.is-active {
+            width: 10px;
+            height: 10px;
+            border: 1.5px solid white;
+        }
+    }
+
+    .connect-socials a {
+        font-size: 20px;
+    }
+
+    /* About-Intro Section */
+    .about-intro .row-content {
+        margin: 6% auto 0;
+        width: 94%;
+    }
+    .about-intro img {
+        width: 95%;
+        height: 378px;
+    }
+
+    .section-text {
+        width: 94%;
+        margin-top: 10px;
+    }
+
+    .section-text p{
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /* work-Intro Section */
+    .work-intro .carousel-items {
+        height: 50vh;
+    }
+
+    .carousel-arrow {
+        padding: 6px 10px;
+    }
+    
+    .carousel-unit {
+        width: 94%;
+        flex-direction: column;
+    }
+
+    .carousel-unit-image {
+        width: 100%;
+    }
+
+    .carousel-unit-info {
+        width: 100%;
+    }
+
+    .carousel-unit-title {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    /* Contact Section */
+    .contact .row-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    form input, form textarea, form select {
+        font-size: 15px;
+        padding-bottom: 8px;
+    }
+
+    .connect {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* About Page */
+    .home {
+        height: fit-content;
+    }
+    .home .row-content {
+        height: fit-content;
+        width: 90%;
+        margin: 10% auto 0;
+        flex-direction: column-reverse;
+    }
+    
+    .home-text {
+        width: 100%;
+        margin-top: 22px;
+    }
+
+    .home-text p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .home img {
+        width: 100%;
+        content: url("../media/branding/me-about-mobile.png");
+    }
+
+    .container-tab {
+        margin-top: 8%;
+        height: 100%;
+        width: 90%;
+    }
+
+    #myTab.nav {
+        flex-wrap: nowrap;
+    }
+
+    .nav-tabs .nav-link {
+        margin: 0 4px -3px 0;
+        font-size: 14px;
+        width: auto;
+        padding: 5px;
+        line-height: 1.2;
+    }
+
+    #nav-tabContent .container {
+        flex-direction: column;
+    }
+
+    .tab-img {
+        margin: 2% auto;
+        width: 140px;
+    }
+
+    .tab-description {
+        margin-top: 13px;
+        padding: 0px;
+    }
+
+    .tab-description p {
+        text-align: justify;
+    }
+
+    .red-points {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .skillset .row-content {
+        margin-top: 12%;
+    }
+
+    .skillset nav {
+        width: 47%;
+        margin-bottom: 22px;
+    }
+
+    .skillset .nav-tabs .nav-link {
+        width: 50%;
+        font-size: 13px;
+    }
+
+    .soft-skill {
+        bottom: -19px;
+    }
+
+    .hard-skill {
+        top: -17px;
+    }
+
+    #nav-tabContent .row-content {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .hardskill-item {
+        width: 95%;
+        height: fit-content;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .hardskill-item h5 {
+        font-size: 15px;
+    }
+
+    .hardskill-item p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .hardskill-item a {
+        font-size: 13px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+
+    }
+
+    .icons {
+        font-size: 1.5rem;
+        margin: 12px 0;
+    }
+
+    .svg-icon {
+        width: 25px;
+        height: 24px;
+    }
+
+    #soft-tab.tab-pane {
+        width: 90%;
+        margin: 7% auto;
+        padding: 5px;
+    }
+
+    .softskill-item {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 11px;
+    }
+
+    .softskill-item div {
+        margin-top: 13px;
+    }
+
+    .softskill-item h5 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .softskill-item p {
+        font-size: 15px;
+    }
+
+    /* My Work Page */
+    #work .home p {
+        width: 100%;
+        font-size: 18px;
+    }  
+    
+    .projects {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+
+    #work .home .project-img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        max-width: 361px;
+    }
+
+    .project-details h2 {
+        font-size: 16px;
+        margin: 22px 0 0 0;
+        line-height: 1.2;
+    }
+    .project-details h3 {
+        font-size: 20px;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    #work .home .project-details p {
+        font-size: 15px;
+        margin: 6px 0;
+        text-align: justify;
+    }
+
+    .project-details a {
+        font-size: 15px;
+    }
+
+    #work .home .mt-5 {
+        margin-top: 2rem !important;
+    }
+
+    /* Reach Me Page */
+    #contact .home p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #contact .contact {
+        margin-top: 32px;
+    }
+
+    #contact .home .row-content {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    /* Footer Section */
+    footer {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 5%;
+        padding: 20px;
+    }
+
+    footer nav {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 1.2rem;
+        margin: 12px auto 0;
+        text-align: center;
+        order: 4;
+    }
+
+    footer h5 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for tablets */
+}
