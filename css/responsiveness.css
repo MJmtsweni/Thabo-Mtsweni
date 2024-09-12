@@ -1,12 +1,12 @@
 /*****Responsiveness Section*****/
 /*****Mobile menu visibility rules*****/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 767px) {
     .menu-btn {
         visibility: hidden; 
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .menu-btn {
         visibility: visible; 
     }
@@ -16,7 +16,7 @@
 }
 
 /* Small Phones */
-@media  (max-width: 599px) {
+@media screen and (max-width: 599px) and (max-height: 1199px) {
     .navbar {
         padding-left: 20px;
         padding-right: 20px;
@@ -47,36 +47,37 @@
         bottom: 0;
         width: 100%;
         text-align: center;
-        margin-bottom: 10%;
+        margin-bottom: 17%;
     }
 
     .hero-nav-items a i {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     .hero .container {
         width: 100%;
         padding: 20px;
-        margin-bottom: 0;
+        margin-top: 9%;
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     /* Typography */
     h1 {
         font-size: 2.5rem;
-        margin-bottom: 13px;
+        margin-bottom: 19px;
+        width: 56%;
     }
 
     h2 {
-        font-size: 16px;
+        font-size: 18px;
         margin-left: 12px;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 22px;
         margin-left: 12px;
     }
 
@@ -108,7 +109,7 @@
     .primary-button {
         font-size: 14px;
         padding: 6px 12px;
-        margin: 10px 0;
+        margin: 19px 0;
     }
 
     .nav-dots {
@@ -134,7 +135,7 @@
     }
     .about-intro img {
         width: 95%;
-        height: 215px;
+        height: 290px;
     }
 
     .section-text {
@@ -149,7 +150,8 @@
 
     /* work-Intro Section */
     .carousel-items {
-        height: 100vh;
+        height: 78vh;
+        padding: 20px 0 40px 0;
     }
 
     .carousel-arrow {
@@ -217,7 +219,6 @@
 
     .home img {
         width: 100%;
-        content: url("../media/branding/me-about-mobile.png");
     }
 
     .container-tab {
@@ -446,6 +447,460 @@
 
   }
 
+/* Large phones */
+@media screen and (min-width: 599px) and (max-width: 767px) {
+    .navbar {
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .menu-btn {
+        top: 17px;
+    }
+
+    .logo {
+        font-size: 1.38rem;
+        width: 100%;
+    }
+    
+    section {
+        padding: 18px 20px;
+        height: fit-content;
+    }
+
+    .hero {
+        display: block;
+        height: calc(100vh - 60px);
+    }
+
+    .hero::before {
+        width: 100%;
+        height: 55%;
+        background-image: url(../media/branding/hero-background-mobile.png);
+        background-position: bottom;
+    }
+
+    .hero-nav-items {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 6%;
+    }
+
+    .hero-nav-items a i {
+        font-size: 2rem;
+    }
+
+    .icon-label {
+        font-size: 20px;
+    }
+
+    .hero .container {
+        width: 100%;
+        padding: 20px;
+        margin-top: 1%;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 3.8rem;
+        margin-bottom: 19px;
+        width: 65%;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-left: 12px;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-left: 12px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .home h1 {
+        font-size: 3.5rem;
+    }
+
+    #work .home h1 {
+        width: 68%;
+    }
+    /* Layout */
+    .home {
+        height: calc(100vh - 60px);
+    }
+    .row-content {
+        flex-direction: column;
+    }
+
+    .section-guide {
+        width: 20px;
+        height: 21px;
+    }
+
+    .space-top {
+        margin-top: 1rem;
+    }
+
+    .intro-para {
+        margin: 15px auto;
+        width: 95%;
+    }
+
+    /* Components */
+    .primary-button {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin: 19px 0;
+    }
+
+    .nav-dots {
+        top: 60%;
+        right: 4%;
+    }
+
+    .indicator-item {
+        width: 10px;
+        height: 10px;
+
+        &.is-active {
+            width: 10px;
+            height: 10px;
+            border: 1.5px solid white;
+        }
+    }
+
+    /* About-Intro Section */
+    .about-intro .row-content {
+        margin: 6% auto 0;
+        width: 94%;
+    }
+    .about-intro img {
+        width: 95%;
+        height: 290px;
+    }
+
+    .section-text {
+        width: 94%;
+        margin-top: 10px;
+    }
+
+    .section-text p{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    /* work-Intro Section */
+    .carousel-items {
+        height: 75vh;
+        padding: 20px 0 30px 0;
+    }
+
+
+    .carousel-arrow {
+        padding: 6px 10px;
+    }
+    
+    .carousel-unit {
+        width: 94%;
+        flex-direction: column;
+    }
+
+    .carousel-unit-image {
+        width: 100%;
+    }
+
+    .carousel-unit-info {
+        width: 100%;
+    }
+
+    .carousel-unit-title {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    /* Contact Section */
+    .contact .row-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    form input, form textarea, form select {
+        font-size: 15px;
+        padding-bottom: 8px;
+    }
+
+    .connect {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* About Page */
+    .home {
+        height: fit-content;
+    }
+    .home .row-content {
+        height: fit-content;
+        width: 90%;
+        margin: 0% auto 0;
+        flex-direction: column-reverse;
+    }
+    
+    .home-text {
+        width: 100%;
+        margin-top: 22px;
+    }
+
+    .home-text p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .home img {
+        width: 100%;
+    }
+
+    .container-tab {
+        margin-top: 8%;
+        height: 100%;
+        width: 90%;
+    }
+
+    #myTab.nav {
+        flex-wrap: nowrap;
+    }
+
+    .nav-tabs .nav-link {
+        margin: 0 4px -3px 0;
+        font-size: 14px;
+        width: auto;
+        padding: 5px;
+        line-height: 1.2;
+    }
+
+    #nav-tabContent .container {
+        flex-direction: column;
+    }
+
+    .tab-img {
+        margin: 2% auto;
+        width: 140px;
+    }
+
+    .tab-description {
+        margin-top: 13px;
+        padding: 0px;
+    }
+
+    .tab-description p {
+        text-align: justify;
+    }
+
+    .red-points {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .skillset .row-content {
+        margin-top: 12%;
+    }
+
+    .skillset nav {
+        width: 47%;
+        margin-bottom: 22px;
+    }
+
+    .skillset .nav-tabs .nav-link {
+        width: 50%;
+        font-size: 13px;
+    }
+
+    .soft-skill {
+        bottom: -19px;
+    }
+
+    .hard-skill {
+        top: -17px;
+    }
+
+    #nav-tabContent .row-content {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .hardskill-item {
+        width: 95%;
+        height: fit-content;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .hardskill-item h5 {
+        font-size: 15px;
+    }
+
+    .hardskill-item p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .hardskill-item a {
+        font-size: 13px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+
+    }
+
+    .icons {
+        font-size: 1.5rem;
+        margin: 12px 0;
+    }
+
+    .svg-icon {
+        width: 25px;
+        height: 24px;
+    }
+
+    #soft-tab.tab-pane {
+        width: 90%;
+        margin: 7% auto;
+        padding: 5px;
+    }
+
+    .softskill-item {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 11px;
+    }
+
+    .softskill-item div {
+        margin-top: 13px;
+    }
+
+    .softskill-item h5 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .softskill-item p {
+        font-size: 15px;
+    }
+
+    /* My Work Page */
+    #work .home p {
+        width: 100%;
+        font-size: 18px;
+        text-align: left;
+    }  
+    
+    .projects {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .project-details {
+        width: 100%;
+        margin-top: 6%;
+    }
+
+    #work .home .project-img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        max-width: 410px;
+    }
+
+    .project-details h2 {
+        font-size: 16px;
+        margin: 0;
+        margin-left: 0;
+        line-height: 1.2;
+    }
+    .project-details h3 {
+        font-size: 21px;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    #work .home .project-details p {
+        font-size: 16px;
+        margin: 11px 0;
+        text-align: justify;
+    }
+
+    .project-details a {
+        font-size: 15px;
+    }
+
+    #work .home .mt-5 {
+        margin-top: 2rem !important;
+    }
+
+    /* Reach Me Page */
+    #contact .home p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #contact .contact {
+        margin-top: 32px;
+    }
+
+    #contact .home .row-content {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    /* Footer Section */
+    footer {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 5%;
+        padding: 20px;
+    }
+
+    footer nav {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 1.2rem;
+        margin: 12px auto 0;
+        text-align: center;
+        order: 4;
+    }
+
+    footer h5 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
 /* Phablets */
 @media screen and (min-width: 481px) and (max-width: 767px) and (min-height: 1200px) {
     .navbar {
@@ -501,6 +956,11 @@
     }
 
     /* Typography */
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
     h1 {
         font-size: 3.8rem;
         margin-bottom: 40px;
@@ -661,7 +1121,6 @@
 
     .home img {
         width: 100%;
-        content: url("../media/branding/me-about-mobile.png");
     }
 
     .container-tab {
@@ -891,5 +1350,352 @@
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Styles for tablets */
+    /* Typography */
+    .logo {
+        font-size: 1.35rem;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .intro-para {
+        font-size: 18px;
+    }
+
+    /* Layout */ 
+    .navbar {
+        height: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hero {
+        height: calc(100vh - 60px);
+    }
+
+    section {
+        padding: 23px 30px;
+    }
+
+    .section-guide {
+        width: 34px;
+    }
+
+    /* Components */
+    .primary-button {
+        font-size: 14px;
+        margin-bottom: 17px;
+    }
+
+    /* contact form */ 
+    form {
+        width: 52%;
+    }
+
+    .connect {
+        width: 35%;
+        padding: 21px;
+    }
+
+    .connect-socials a {
+        font-size: 15px;
+    }
+    .hero::before {
+        height: 100%;
+        width: 50%;
+        background-position: bottom;
+    }
+
+    .hero .container {
+        width: 50%;
+        padding: 5px;
+        margin-bottom: 50%;
+    }
+
+    .hero-nav-items a i {
+        font-size: 1.9rem;
+    }
+
+    .icon-label {
+        font-size: 16px;
+    }
+
+    /* About - Intro Section */
+    .about-intro .row-content {
+        flex-direction: column;
+        height: 90%;
+    }
+
+    .about-intro img {
+        width: 82%;
+        height: 350px;
+        margin-top: 2%;
+    }
+
+    .section-text {
+        width: 93%;
+        padding: 10px;
+    }
+
+    /* About Page */ 
+    .home {
+        height: calc(100vh - 60px);
+        margin-bottom: 8%;
+    }
+    .home .row-content {
+        height: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .home h1 {
+        font-size: 3.5rem;
+        margin-top: 2%;
+    }
+
+    .home-text {
+        width: 98%;
+        margin-top: 1rem;
+    }
+
+    .home img {
+        width: 83%;
+        height: 360px;
+    }
+
+    .container-tab {
+        width: 95%;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 16px;
+    }
+
+    .tab-img {
+        width: 148px;
+    }
+
+    .tab-description p {
+        font-size: 16px;
+    }
+
+    .hardskill-item {
+        width: 50%;
+        height: 325px;
+        padding: 10px;
+        margin-right: 20px;
+    }
+
+    .hardskill-item h5 {
+        font-size: 16px;
+    }
+
+    .hardskill-item p {
+        font-size: 15px;
+    }
+
+    .hardskill-item a {
+        bottom:  8px;
+        left: 12px;
+        font-size: 14px;
+    }
+
+    .icons {
+        font-size: 1.8rem;
+    }
+
+    .svg-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    #soft-tab.tab-pane {
+        width: 95%;
+        margin: 4% auto;
+        padding: 10px;
+    }
+
+    .softskill-item {
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* My Work Page */   
+    #work .home p {
+        font-size: 17px;
+        width: 94%;
+    } 
+
+    #work .home .row-content {
+        flex-direction: row;
+    }
+
+    .projects {
+        margin: 60px 0;
+    }
+
+    #work .home .project-details h2 {
+        font-size: 16px;
+    }
+
+    #work .home .project-details h3 {
+        font-size: 22px;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+
+    #work .home .project-details p {
+        font-size:  15px;
+    }
+
+    #work .home .project-img {
+        width: 45%;
+        height: auto;
+        margin-left: 4%;
+    }
+
+    .project-details a {
+        font-size: 15px;
+    }
+
+    /* Contact Page */
+    #contact .home p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .home .contact .row-content {
+        flex-direction: row;
+    }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1440px) {
+    /* Typograpghy */
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .intro-para {
+        font-size: 20px;
+    }
+
+    /* Layout */
+    section {
+        padding: 22px 22px;
+    }
+    /* Components */ 
+    .navbar {
+        height: 85px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .primary-button {
+        font-size: 16px;
+        border: 1.9px solid var(--primary-color);
+    }
+
+    .hero {
+        height: calc(100vh - 85px);
+    }
+
+    .hero::before {
+        height: 85%;
+        background-position: left;
+    }
+
+    .nav-items a {
+        font-size: 18px;
+    }
+
+    .socials a i {
+        font-size: 1.3rem;
+    }
+
+    .hero-nav-items {
+        margin-left: 3%;
+        margin-bottom: 3%;
+    }
+
+    .hero-nav-items a i {
+        font-size: 2.4rem;
+    }
+
+    .icon-label {
+        font-size: 22px;
+    }
+
+    /* About - Section */
+    .about-intro .row-content {
+        justify-content: space-evenly;
+        height: 88%;
+    }
+
+    .tab-description p {
+        font-size: 18px;
+    }
+
+    .about-intro img {
+        width: 32%;
+        height: 65%;
+    }
+
+    .section-text {
+        width: 50%;
+    }
+
+    .section-text p {
+        font-size: 18px;
+    }
+
+    .carousel-items {
+        width: 70%;
+        height: 530px;
+        margin: 0 auto;
+    }
+
+    .carousel-slide {
+        max-width: 90%;
+        max-height: 100%;
+    }
+
+    .carousel-icon {
+        width: 50px;
+    }
+
+    .carousel-arrow {
+        padding: 15px 10px;
+    }
+    
+
+   
 }
