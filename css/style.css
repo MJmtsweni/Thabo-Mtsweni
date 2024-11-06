@@ -604,9 +604,9 @@ input:focus, textarea:focus {
     flex-basis: 56%;
     background-color: #fff;
     border: 2px solid var(--primary-color);  
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     transform: translateX(-100%);
     transition: 0.6s all ease-in-out;
@@ -644,11 +644,11 @@ input:focus, textarea:focus {
 }
 
 .carousel-unit-1 .carousel-unit-image {
-    background-image: url('../media/branding/mindful-breathing.png');
+    background-image: url('../media/branding/presently-large.png');
 }
 
 .carousel-unit-2 .carousel-unit-image {
-    background-image: url('../media/branding/bodyscan.png');
+    background-image: url('../media/branding/lottery-large.png');
 }
 
 .carousel-unit-3 .carousel-unit-image {

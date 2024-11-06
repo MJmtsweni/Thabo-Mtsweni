@@ -20,6 +20,12 @@
     .navbar {
         padding-left: 20px;
         padding-right: 20px;
+        height: 56px;
+    }
+
+    .menu-btn {
+        right: 20px;
+        top: 18px;
     }
 
     .logo {
@@ -28,7 +34,7 @@
     }
     
     section {
-        padding: 18px 10px;
+        padding: 23px 17px;
         height: fit-content;
     }
 
@@ -40,6 +46,7 @@
         width: 100%;
         background-image: url(../media/branding/hero-background-mobile.png);
         background-position: bottom;
+        bottom: -17px;
     }
 
     .hero-nav-items {
@@ -47,17 +54,17 @@
         bottom: 0;
         width: 100%;
         text-align: center;
-        margin-bottom: 17%;
+        margin-bottom: 10%;
     }
 
     .hero-nav-items a i {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .hero .container {
         width: 100%;
         padding: 20px;
-        margin-top: 9%;
+        margin-top: 3%;
     }
 
     .hero p {
@@ -68,7 +75,7 @@
     h1 {
         font-size: 2.5rem;
         margin-bottom: 19px;
-        width: 56%;
+        width: 69%;
     }
 
     h2 {
@@ -83,6 +90,10 @@
 
     p {
         font-size: 16px;
+    }
+
+    #work .home h1 {
+        width: 74%;
     }
 
 
@@ -150,8 +161,8 @@
 
     /* work-Intro Section */
     .carousel-items {
-        height: 78vh;
-        padding: 20px 0 40px 0;
+        height: 605px;
+        padding: 5px 0 5px 0;
     }
 
     .carousel-arrow {
@@ -165,15 +176,52 @@
 
     .carousel-unit-image {
         width: 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+
+    .carousel-unit-1 .carousel-unit-image {
+        background-image: url('../media/branding/presently-small.png');
+    }
+
+    .carousel-unit-2 .carousel-unit-image {
+        background-image: url('../media/branding/lottery-small.png');
+    }
+
+    .carousel-unit-3 .carousel-unit-image {
+        background-image: url('../media/branding/presently-small.png');
+    }
+
+    @media (min-width: 425px) {
+        .carousel-unit-1 .carousel-unit-image {
+            background-image: url('../media/branding/presently-424w.png');
+        }
+        .carousel-unit-2 .carousel-unit-image {
+            background-image: url('../media/branding/lottery-424w.png');
+        }
+    }
+    
 
     .carousel-unit-info {
         width: 100%;
+        height: 53%;
+        padding: 15px;
     }
 
     .carousel-unit-title {
         margin: 0;
-        font-size: 20px;
+        font-size: 25px;
+    }
+
+    .carousel-unit-description {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    .primary-button {
+        margin: 11px 0 0;
+        font-size: 12px;
     }
 
     /* Contact Section */
@@ -351,8 +399,10 @@
 
     /* My Work Page */
     #work .home p {
-        width: 100%;
+        width: 95%;
         font-size: 18px;
+        text-align: left;
+        margin: 0 0 0 8px;
     }  
     
     .projects {
@@ -362,6 +412,7 @@
 
     .project-details {
         width: 100%;
+        margin-top: 5%;
     }
 
     #work .home .project-img {
@@ -373,7 +424,7 @@
 
     .project-details h2 {
         font-size: 16px;
-        margin: 22px 0 0 0;
+        margin: 3px 0 0 0;
         line-height: 1.2;
     }
     .project-details h3 {
@@ -580,6 +631,9 @@
         }
     }
 
+    /* Home - Carousel */
+    
+
     /* About-Intro Section */
     .about-intro .row-content {
         margin: 6% auto 0;
@@ -618,10 +672,13 @@
 
     .carousel-unit-image {
         width: 100%;
+        background-position: top center;
+        background-size: cover;
     }
 
     .carousel-unit-info {
         width: 100%;
+        height: 50%;
     }
 
     .carousel-unit-title {
@@ -1349,7 +1406,7 @@
 }
 
 /* Tablets */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
     /* Typography */
     .logo {
         font-size: 1.35rem;
@@ -1431,6 +1488,20 @@
 
     .icon-label {
         font-size: 16px;
+    }
+
+    /* Home - Carousel */
+    .carousel-unit-image {
+        background-position: top center;
+        background-size: cover;
+    }
+
+    .carousel-unit-1 .carousel-unit-image {
+        background-image: url('../media/branding/presently-tablets.png');
+    }
+
+    .carousel-unit-2 .carousel-unit-image {
+        background-image: url('../media/branding/lottery-tablets.png');
     }
 
     /* About - Intro Section */
