@@ -8,6 +8,11 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+     <!--Favicon Icon-->
+     <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon/favicon-16x16.png">
+     <link rel="manifest" href="./media/favicon/site.webmanifest">
      <!--Fontawesomes Icons-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
      <!--Bootstrap CSS-->
@@ -78,10 +83,10 @@
                             mindfulness. Passionate about the transformative power of mindful practices, I aimed to provide a digital 
                             space where visitors could learn, understand, and incorporate mindfulness into their daily lives. 
                         </p>
-                        <a href="">
+                        <a href="https://thabomtsweni.mabiliprojects.co.za/index.html" target="_blank" rel="noopener noreferrer">
                             Visit Page
                         </a>
-                        <a href="">
+                        <a href="https://github.com/MJmtsweni/presently.git" target="_blank" rel="noopener noreferrer">
                             Source Code
                         </a>
                     </div>
@@ -95,10 +100,10 @@
                             This JavaScript-powered web app simplifies lottery number generation for Lotto and Powerball. Its user-friendly
                             interface allows for quick, random number generation, saving time and effort.
                         </p>
-                        <a href="">
+                        <a href="https://mjmtsweni.github.io/Lottery-number-generator/" target="_blank" rel="noopener noreferrer">
                             Visit Page
                         </a>
-                        <a href="">
+                        <a href="https://github.com/MJmtsweni/Lottery-number-generator.git" target="_blank" rel="noopener noreferrer">
                             Source Code
                         </a>
                     </div>
@@ -106,28 +111,20 @@
                 </div>
                 <div class="row-content mt-5">
                     <div class="project-details">
-                        <h3>Project Title</h3>
-                        <h2>project Type</h2>
-                        <div class="project-icons">
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                        </div>
+                        <h3>Instant Nutrition</h3>
+                        <h2>E-commence</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                            tempor incididunt ut labore et dolore magna aliqua. Eget duis at tellus at 
-                            urna. In nisl nisi scelerisque eu ultrices. Eros donec ac odio tempor. Blandit 
-                            volutpat maecenas volutpat blandit. Quam id leo in vitae turpis. Et tortor at 
-                            risus viverra adipiscing at in tellus.
+                            This e-commerce website, inspired by Herbalife, serves as a digital storefront for a range of health and wellness products. 
+                            Built with HTML, CSS, & JavaScript. This project demonstrates proficiency in web development and user experience design.
                         </p>
-                        <a href="">
+                        <a href="https://mjmtsweni.github.io/Instant-Nutrition/" target="_blank" rel="noopener noreferrer">
                             Visit Page
                         </a>
-                        <a href="">
+                        <a href="https://github.com/MJmtsweni/Instant-Nutrition.git" target="_blank" rel="noopener noreferrer">
                             Source Code
                         </a>
                     </div>
-                    <img src="./media/branding/presently.png" alt="" class="project-img">
+                    <img src="./media/branding/instant nutrition.png" alt="" class="project-img">
                 </div>
             </div>
         </Section>
@@ -140,32 +137,35 @@
                 Feel free to reach out using the information below.
             </p>
             <div class="row-content">
-                <form action="" method="post">
+                <form action="https://api.web3forms.com/submit" method="post" id="contactForm">
+                    <input type="hidden" name="access_key" value="22c813bd-df99-4718-9c87-9ca21bcebbd0">
                     <div class="field-group">
                         <label for="name">Your Name</label>
-                        <input type="text" placeholder="Enter your name">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     </div>
                     <div class="field-group">
                         <label for="floatingSelect">Your Subject</label>
-                        <select class="form-select" id="Select" aria-label="Floating label select example">
+                        <select class="form-select" id="subject" name="topic" required>
                           <option selected>Select your subject</option>
-                          <option value="1">General enquiry</option>
-                          <option value="2">Feedback</option>
-                          <option value="3">Reporting a bug</option>
+                          <option value="General enquiry">General enquiry</option>
+                          <option value="Feedback">Feedback</option>
+                          <option value="Reporting a bug">Reporting a bug</option>
                         </select>
                     </div>
                     <div class="field-group">
                         <label for="floatingInput">Email address</label>
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="floatingInput email" name="email" placeholder="name@example.com" required>
                     </div>
                     <div class="field-group">
                         <label for="floatingTextarea">Your Message</label>
-                        <textarea class="form-control" placeholder="Type your message" id="floatingTextarea"></textarea>
+                        <textarea class="form-control" name="message" placeholder="Type your message" id="floatingTextarea message" required></textarea>
                     </div>
-                    <a href="" class="primary-button">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <button type="submit" class="primary-button">
                         <i class="fa-solid fa-paper-plane"></i>
                         Send Message
-                    </a>
+                    </button>
+                    <div id="result"></div>
                 </form>
 
                 <div class="connect">
@@ -205,28 +205,30 @@
         </nav>
         <div class="footer-socials">
             <h5>Contact Info</h5>
-            <a href="">
+            <a href="mailto:tmtsweni@hotmail.com" target="_blank" rel="noopener noreferrer">
                 <i class="fa-regular fa-envelope"></i>
                 Email
             </a>
-            <a href="">
+            <a href="https://github.com/MJmtsweni" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i>
                 Github
             </a>
-            <a href="">
+            <a href="http://www.linkedin.com/in/thabo-mtsweni" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin"></i>
                 Linkedln
             </a>
         </div>
         <div class="site-info">
             <h5>Information</h5>
-            <a href="./media/downloads/Presently Website Disclaimer.pdf" download="Presently Website Disclaimer.pdf" target="_blank">Disclaimer</a>
+            <a href="./media/downloads/Disclaimer.pdf" download="Portfolio Website Disclaimer.pdf" target="_blank">Disclaimer</a>
         </div>
     </footer>
     <!--Toggle Menu Script-->
     <script src="./js/toggle-menu.js"></script>
     <!--Verticle Slider Script-->
     <script src="./js/vertical-slider.js"></script>
+    <!--Validatge Contact Form Script-->
+    <script src="./js/validate.js"></script>
     <!--Bootstrap Script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

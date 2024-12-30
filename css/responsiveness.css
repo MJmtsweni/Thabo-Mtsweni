@@ -190,7 +190,7 @@
     }
 
     .carousel-unit-3 .carousel-unit-image {
-        background-image: url('../media/branding/presently-small.png');
+        background-image: url('../media/branding/instant\ nutrition-small.png');
     }
 
     @media (min-width: 425px) {
@@ -1457,6 +1457,16 @@
         margin-bottom: 17px;
     }
 
+    .indicator-item {
+        width: 10px;
+        height: 10px;
+
+        &.is-active {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
     /* contact form */ 
     form {
         width: 52%;
@@ -1491,6 +1501,10 @@
     }
 
     /* Home - Carousel */
+    .work-intro {
+        height: fit-content;
+    }
+
     .carousel-unit-image {
         background-position: top center;
         background-size: cover;
@@ -1502,6 +1516,10 @@
 
     .carousel-unit-2 .carousel-unit-image {
         background-image: url('../media/branding/lottery-tablets.png');
+    }
+
+    .carousel-unit-3 .carousel-unit-image {
+        background-image: url('../media/branding/instant\ nutrition-tablets.png');
     }
 
     /* About - Intro Section */
@@ -1695,12 +1713,16 @@
         border: 1.9px solid var(--primary-color);
     }
 
+    .nav-dots {
+        right: 0.8%;
+    }
+
     .hero {
         height: calc(100vh - 85px);
     }
 
     .hero::before {
-        height: 85%;
+        height: 68%;
         background-position: left;
     }
 
@@ -1748,9 +1770,14 @@
         font-size: 18px;
     }
 
+    /* Work - Section */
+    .work-intro {
+        height: fit-content;
+    }
+
     .carousel-items {
-        width: 70%;
-        height: 530px;
+        width: 80%;
+        height: 569px;
         margin: 0 auto;
     }
 

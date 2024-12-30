@@ -388,7 +388,6 @@ span.current {
     margin-right: 4px;
 }
 
-
 /* Contact form */
 
 form {
@@ -411,23 +410,33 @@ form label {
     margin-bottom: 10px;
 }
 
-form input, form textarea, form select {
+form input, form textarea, form select, .form-control, .form-select {
     width: 100%;
     border: none;
+    border-radius: 0;
     border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 14px;
+    padding: 0 0 14px 0;
     font-size: 16px;
     font-family: 'Wittgenstein', sans-serif;
     background-color: #fff;
     color: var(--tertiary-color);
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder, textarea::placeholder, .form-control::placeholder {
+    color: var(--tertiary-color);
     opacity: 1;
 }
 
 input:focus, textarea:focus {
     outline: none;
+}
+
+div#result {
+    width: 95%;
+    padding: 8px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
 }
 
 /* Hero Section */
@@ -488,6 +497,7 @@ input:focus, textarea:focus {
 }
 
 .hero-nav-items {
+    position: relative;
     z-index: 1;
     margin-bottom: 1%;
 }
@@ -542,11 +552,16 @@ input:focus, textarea:focus {
 }
 
 /* Work - Intro Section */
+.work-intro {
+    height: fit-content;
+}
+
 .carousel {
     margin: 0;
     padding: 0px 0;
     height: fit-content;
 }
+
 .carousel-items {
     width: 100%;
     height: 540px;
@@ -652,12 +667,9 @@ input:focus, textarea:focus {
 }
 
 .carousel-unit-3 .carousel-unit-image {
-    background-image: url('../media/branding/mindful-walk.png');
+    background-image: url('../media/branding/instant\ nutrition-large.png');
 }
 
-.carousel-unit-4 .carousel-unit-image {
-    background-image: url('../media/branding/unitasking.png');
-}
 
 .carousel-nav {
     position: absolute;
