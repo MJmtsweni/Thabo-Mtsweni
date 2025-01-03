@@ -751,16 +751,12 @@ div#result {
     margin: 10px;
 }
 
-.connect-socials a i {
-    margin-right: 5px;
+.connect-socials a:hover {
+    color: var(--tertiary-color);
 }
 
-.connect-socials .tooltip .tooltiptext {
-    background-color: #fff;
-    color: var(--primary-color);
-    bottom: -214%;
-    left: 30%;
-
+.connect-socials a i {
+    margin-right: 5px;
 }
 
 /* About page */
@@ -768,6 +764,7 @@ div#result {
 .journey {
     height: fit-content;
 }
+
 .container-tab {
     position: relative;
     width: 85%;
