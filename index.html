@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thabo Mtsweni's Portfolio</title>
+    <title>Thabo Mtsweni | IT Support Specialist</title>
     <!--Google Font Wittgenstein-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,11 +68,12 @@
 
     <Section class="hero area">
         <div class="container">
-            <h1>Front-end Deverloper</h1>
+            <h1>IT Support Specialist</h1>
             <p>
-                The web is constantly evolving, and I'm right there with it!  I'm 
-                a front-end developer fueled by curiosity and a passion for 
-                crafting innovative and engaging websites.
+                IT Support Specialist transitioning into Network Administration & Cloud Networking.
+                Hands-on experience configuring Azure Virtual Networks, Cisco routing and switching, 
+                VLANs, OSPF, and access control. I build real labs, document every step, and bring a 
+                problem-solving mindset from my IT support background. 
             </p>
             <button id="downloadButton" class="primary-button tooltip">
                 <i class="fa-solid fa-download"></i>
@@ -84,7 +85,7 @@
                     <i class="fa-regular fa-envelope"></i>
                     <span class="tooltiptext">Email Me</span>
                 </a>
-                <a href="http://www.linkedin.com/in/thabo-mtsweni" target="_blank" rel="noopener noreferrer" class="tooltip">
+                <a href="http://www.linkedin.com/in/thabomtsweni" target="_blank" rel="noopener noreferrer" class="tooltip">
                     <i class="fa-brands fa-linkedin"></i>
                     <span class="tooltiptext">Visit My Linkedln</span>
                 </a>
@@ -124,30 +125,27 @@
                 <img src="./media/branding/me-intro.png" alt="A picture of Thabo Mtsweni dressed semi-formally"/>
                 <div class="section-text">
                     <p>
-                        Hello! I'm Thabo, and I'm absolutely thrilled to be diving headfirst into the world 
-                        of front-end development. Websites have always captivated me. From their sleek 
-                        designs to their ability to inform, entertain, and connect people, the web holds a 
-                        certain magic. This fascination goes back to my early days, where I spent hours 
-                        on captivating websites, wondering how developers managed to arrange 
-                        information and content in such a visually appealing and interactive way.
+                        Hello! I'm Thabo, and what started as a fascination with how websites are built has evolved into something deeper — 
+                        a passion for understanding how the networks that power them actually work.
                     </p>
                     <p>
-                        That early curiosity sparked a passion for front-end development. This field 
-                        allows me to combine my love for problem-solving with the ability to bring 
-                        ideas to life on the web. As a fast learner with a knack for tackling challenges, 
-                        I'm constantly hungry to expand my skillset. I'm particularly drawn to building 
-                        dynamic user interfaces with JavaScript frameworks and creating captivating 
-                        animations with CSS.
+                        My journey began in front-end development, where I spent countless hours crafting digital experiences and marvelling at 
+                        the web's ability to inform, connect, and inspire. But the more I built, the more I found myself asking a different question: not 
+                        how do I display this, but how does this data actually get here? That curiosity pulled me toward networking — and I haven't looked back.
+                    </p>
+                    <p>
+                        Today I'm focused on Today I'm focused on Azure cloud networking, Cisco routing & switching, and earning the hands-on experience that matters 
+                        in real enterprise environments., and earning the hands-on experience that matters in real enterprise environments.
                     </p>
                 </div>
             </div>
         </section>
         <section class="work-intro area">
             <span class="section-guide"></span>
-            <h2 class="space-top">My Creative Journey</h2>
+            <h2 class="space-top">My Workshop</h2>
             <h3>Explore a Section of Projects</h3>
             <p class="intro-para">
-                I'm passionate about bringing ideas to life through code. Take a look at some of my recent creations.
+                Hands-on networking labs covering Azure cloud infrastructure, Cisco enterprise simulation, and real-world home lab practice.
             </p>
             <section class="carousel">
                 <div class="carousel-items">
@@ -167,13 +165,19 @@
                     <div class="carousel-unit carousel-unit-1">
                         <div class="carousel-unit-image"></div>
                         <div class="carousel-unit-info">
-                            <h4 class="carousel-unit-title">Presently</h4>
+                            <h4 class="carousel-unit-title">Azure VNet with Subnet Segmentation & NSG Firewall Rules</h4>
                             <p class="carousel-unit-description"> 
-                                As part of my Mabili practical assignment, I created this informative website to explore the concept of mindfulness. 
-                                Passionate about the transformative power of mindful practices, I aimed to provide a digital space where visitors 
-                                could learn, understand, and incorporate mindfulness into their daily lives. 
+                                Designed and deployed an Azure Virtual Network with isolated Frontend and Backend subnets. Hardened access 
+                                using Network Security Groups to allow HTTP traffic while restricting SSH/RDP to a single trusted IP. <br>
+                                Azure VNet NSG Subnetting Linux VM Azure Portal Key Outcomes:
                             </p>
-                            <a href="./work.html" class="primary-button carousel-unit-btn">
+                            <ul>
+                                <li>- Created VNet with Frontend & Backend subnet segmentation</li>
+                                <li>- Deployed two Linux VMs into separate subnets</li>
+                                <li>- Configured NSG rules enforcing least-privilege access</li>
+                                <li>- Verified cross-subnet VM connectivity</li>
+                            </ul>
+                            <a href="https://github.com/MJmtsweni/azure-virtual-network-architecture.git" target="_blank" rel="noopener noreferrer" class="primary-button carousel-unit-btn">
                                 <i class="fa-solid fa-eye"></i>
                                 View Project
                             </a>
@@ -182,12 +186,19 @@
                     <div class="carousel-unit carousel-unit-2">
                         <div class="carousel-unit-image"></div>
                         <div class="carousel-unit-info">
-                            <h4 class="carousel-unit-title">Lottery Number Generator</h4>
+                            <h4 class="carousel-unit-title">Multi-Site Enterprise Network: VLANs, OSPF & ACL Security</h4>
                             <p class="carousel-unit-description">
-                                This JavaScript-powered web app simplifies lottery number generation for Lotto and Powerball. Its user-friendly 
-                                interface allows for quick, random number generation, saving time and effort.               
+                                Simulated a multi-department enterprise network in Cisco Packet Tracer, implementing VLAN segmentation, inter-VLAN 
+                                routing via Router-on-a-Stick, OSPF dynamic routing, and ACLs to isolate guest traffic. <br>
+                                 VLANs OSPF Router-on-a-Stick ACLs Packet Tracer Key Outcomes:           
                             </p>
-                            <a href="./work.html" class="primary-button carousel-unit-btn">
+                            <ul>
+                                <li>- Configured HR, IT, and Guest VLANs on managed switches</li>
+                                <li>- Enabled inter-VLAN routing via 802.1Q trunk interface</li>
+                                <li>- Deployed OSPF/EIGRP between HQ and branch offices</li>
+                                <li>- Blocked Guest VLAN access to internal servers via ACLs</li>
+                            </ul>
+                            <a href="https://github.com/MJmtsweni/multi-site-enterprise-network.git" target="_blank" rel="noopener noreferrer" class="primary-button carousel-unit-btn">
                                 <i class="fa-solid fa-eye"></i>
                                 View Project
                             </a>
@@ -196,12 +207,20 @@
                     <div class="carousel-unit carousel-unit-3">
                         <div class="carousel-unit-image"></div>
                         <div class="carousel-unit-info">
-                            <h4 class="carousel-unit-title">Instant Nutrition</h4>
+                            <h4 class="carousel-unit-title">Hybrid Cloud Bridge: Site-to-Site IPsec VPN Tunnel</h4>
                             <p class="carousel-unit-description">
-                                This e-commerce website, inspired by Herbalife, serves as a digital storefront for a range of health and wellness products. 
-                                Built with HTML, CSS, & JavaScript. This project demonstrates proficiency in web development and user experience design.
+                                Integrated an on-premise infrastructure with Microsoft Azure cloud by deploying a secure Site-to-Site IPsec VPN tunnel, 
+                                simulating a production-grade enterprise hybrid environment.
+                                Azure VPN pfSense VirtualBox StrongSwan IKEv2 Key Outcomes:
                             </p>
-                            <a href="./work.html" class="primary-button carousel-unit-btn">
+                            <ul>
+                                <li>- Simulated an on-premise data center using pfSense CE within Oracle VirtualBox</li>
+                                <li>- Deployed an Azure Virtual Network Gateway (VpnGw1) to anchor the cloud termination point</li>
+                                <li>- Configured a secure IKEv2 IPsec tunnel using StrongSwan cryptographic parameters</li>
+                                <li>- Established cross-environment routing to connect on-premise nodes directly to Azure VMs</li>
+                                <li>- Validated end-to-end traffic encryption, uptime monitoring, and failover parameters</li>
+                            </ul>
+                            <a href="https://github.com/MJmtsweni/hybrid-cloud-bridge.git" target="_blank" rel="noopener noreferrer" class="primary-button carousel-unit-btn">
                                 <i class="fa-solid fa-eye"></i>
                                 View Project
                             </a>
@@ -216,8 +235,7 @@
             <h2 class="space-top">Get In Touch</h2>
             <h3>Let's collaborate</h3>
             <p class="intro-para">
-                I'm always interested in connecting with other developers and exploring new opportunities. 
-                Feel free to reach out using the information below.
+                Open to junior network admin roles, IT support with networking scope, and cloud networking positions in Johannesburg — on-site, hybrid, or remote.
             </p>
             <div class="row-content">
                 <form action="https://api.web3forms.com/submit" method="post" id="contactForm">
@@ -262,7 +280,7 @@
                             <i class="fa-brands fa-github"></i>
                             Github
                         </a>
-                        <a href="http://www.linkedin.com/in/thabo-mtsweni" target="_blank" rel="noopener noreferrer">
+                        <a href="http://www.linkedin.com/in/thabomtsweni" target="_blank" rel="noopener noreferrer">
                             <i class="fa-brands fa-linkedin"></i>
                             Linkedln
                         </a>
@@ -275,7 +293,7 @@
         <div class="footer-logo">
             <span class="first-name">Thabo</span> 
             <span class="last-name">Mtsweni</span>
-            <p>&copy; 2024 Presently. All Rights Reserved.</p>
+            <p>&copy; 2026. All Rights Reserved.</p>
         </div>
         <nav class="footer-nav">
            <h5>Sitemap</h5>
@@ -296,7 +314,7 @@
                 <i class="fa-brands fa-github"></i>
                 Github
             </a>
-            <a href="http://www.linkedin.com/in/thabo-mtsweni" target="_blank" rel="noopener noreferrer">
+            <a href="http://www.linkedin.com/in/thabomtsweni" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin"></i>
                 Linkedln
             </a>
