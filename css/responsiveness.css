@@ -182,23 +182,23 @@
     }
 
     .carousel-unit-1 .carousel-unit-image {
-        background-image: url('../media/branding/presently-small.png');
+        background-image: url('../media/branding/Cloud Infra.jpg');
     }
 
     .carousel-unit-2 .carousel-unit-image {
-        background-image: url('../media/branding/lottery-small.png');
+        background-image: url('../media/branding/Enterprise.jpg');
     }
 
     .carousel-unit-3 .carousel-unit-image {
-        background-image: url('../media/branding/instant\ nutrition-small.png');
+        background-image: url('../media/branding/Hybrid\ Cloud\ Bridge.jpg');
     }
 
     @media (min-width: 425px) {
         .carousel-unit-1 .carousel-unit-image {
-            background-image: url('../media/branding/presently-424w.png');
+            background-image: url('../media/branding/Cloud Infra.jpg');
         }
         .carousel-unit-2 .carousel-unit-image {
-            background-image: url('../media/branding/lottery-424w.png');
+            background-image: url('../media/branding/Enterprise.jpg'');
         }
     }
     
