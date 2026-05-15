@@ -40,6 +40,7 @@
 
     .hero {
         display: block;
+        padding: 9px 6px;
     }
 
     .hero::before {
@@ -63,8 +64,8 @@
 
     .hero .container {
         width: 100%;
-        padding: 20px;
-        margin-top: 3%;
+        padding: 11px;
+        margin-top: 1%;
     }
 
     .hero p {
@@ -73,8 +74,8 @@
 
     /* Typography */
     h1 {
-        font-size: 2.5rem;
-        margin-bottom: 19px;
+        font-size: 2.3rem;
+        margin-bottom: 10px;
         width: 69%;
     }
 
@@ -119,7 +120,7 @@
     /* Components */
     .primary-button {
         font-size: 14px;
-        padding: 6px 12px;
+        padding: 3px 6px;
         margin: 19px 0;
     }
 
@@ -176,13 +177,13 @@
 
     .carousel-unit-image {
         width: 100%;
-        background-position: top center;
+        background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 
     .carousel-unit-1 .carousel-unit-image {
-        background-image: url('../media/branding/Cloud Infra.jpg');
+        background-image: url('../media/branding/Cloud\ Infra.jpg');
     }
 
     .carousel-unit-2 .carousel-unit-image {
@@ -195,32 +196,36 @@
 
     @media (min-width: 425px) {
         .carousel-unit-1 .carousel-unit-image {
-            background-image: url('../media/branding/Cloud Infra.jpg');
+            background-image: url('../media/branding/Cloud\ Infra.jpg');
         }
         .carousel-unit-2 .carousel-unit-image {
-            background-image: url('../media/branding/Enterprise.jpg'');
+            background-image: url('../media/branding/Enterprise.jpg');
         }
     }
     
 
     .carousel-unit-info {
         width: 100%;
-        height: 53%;
-        padding: 15px;
+        height: 65%;
+        padding: 10px;
+    }
+
+    .carousel-unit-info ul {
+        font-size: 12px;
     }
 
     .carousel-unit-title {
         margin: 0;
-        font-size: 25px;
+        font-size: 16px;
     }
 
     .carousel-unit-description {
-        font-size: 15px;
-        margin: 10px 0;
+        font-size: 14px;
+        margin: 5px 0;
     }
 
     .primary-button {
-        margin: 11px 0 0;
+        margin: 6px 0 0;
         font-size: 12px;
     }
 
@@ -251,7 +256,7 @@
     .home .row-content {
         height: fit-content;
         width: 90%;
-        margin: 10% auto 0;
+        margin: 3% auto 0;
         flex-direction: column-reverse;
     }
     
@@ -407,12 +412,12 @@
     
     .projects {
         width: 100%;
-        margin: 50px 0;
+        margin: 30px 0;
     }
 
     .project-details {
         width: 100%;
-        margin-top: 5%;
+        margin-top: 16%;
     }
 
     #work .home .project-img {
@@ -1511,15 +1516,15 @@
     }
 
     .carousel-unit-1 .carousel-unit-image {
-        background-image: url('../media/branding/presently-tablets.png');
+        background-image: url('../media/branding/Cloud\ Infra.jpg');
     }
 
     .carousel-unit-2 .carousel-unit-image {
-        background-image: url('../media/branding/lottery-tablets.png');
+        background-image: url('../media/branding/Enterprise.jpg');
     }
 
     .carousel-unit-3 .carousel-unit-image {
-        background-image: url('../media/branding/instant\ nutrition-tablets.png');
+        background-image: url('../media/branding/Hybrid\ Cloud\ Bridge.jpg');
     }
 
     /* About - Intro Section */
